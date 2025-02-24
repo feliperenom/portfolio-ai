@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TinyHome AI Assistant</title>
+  <!-- Hoja de estilos externa -->
+  <link rel="stylesheet" href="styles.css" />
+  
+  <!-- Iconos de FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+  <!-- Sidebar -->
+  <nav class="sidebar">
+    <div class="logo-container">
+      <img 
+        src="logo.webp" 
+        alt="Logo" 
+        class="logo"
+      />
+      <div class="brand-text">TinyHome AI</div>
+    </div>
+
+    <div class="model-info">
+      <div><strong>Modelo:</strong> GPT-3.5 Turbo</div>
+      <div><strong>Versión:</strong> 1.2.0</div>
+      <div><i class="fas fa-shield-alt"></i> Seguro y ético</div>
+    </div>
+  </nav>
+
+  <!-- Chat Container -->
+  <div class="chat-container">
+    <div class="chat-messages" id="chatMessages"></div>
+    <div class="loading" id="loading">
+      <i class="fas fa-spinner fa-spin"></i> Generando respuesta...
+    </div>
+
+    <div class="input-container">
+      <div class="input-wrapper">
+        <textarea
+          id="messageInput"
+          placeholder="Escribe tu mensaje..."
+          rows="1"
+          onkeydown="handleKeyPress(event)"
+        ></textarea>
+        <button
+          class="send-button"
+          onclick="sendMessage()"
+          id="sendButton"
+        >
+          <i class="fas fa-paper-plane"></i> Enviar
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Script externo -->
+  <script src="script.js"></script>
+</body>
+</html>

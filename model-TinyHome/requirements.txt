@@ -1,0 +1,11 @@
+fastapi
+python-dotenv
+langgraph
+langchain_openai
+pydantic
+typing-extensions
+langchain_community
+langchain_text_splitters
+langchain_huggingface
+langchain_chroma
+uvicorn
