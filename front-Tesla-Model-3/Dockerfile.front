@@ -1,0 +1,18 @@
+# Usar una imagen oficial de Python como base
+FROM python:3.10
+
+# Establecer el directorio de trabajo en el contenedor
+WORKDIR /app
+
+# Copiar todo el contenido de la carpeta front al contenedor
+COPY streamlit_app.py .
+COPY requirements-front.txt .
+
+# Instalar las dependencias desde requirements-front.txt
+RUN pip install --no-cache-dir -r /app/requirements-front.txt
+
+# Exponer el puerto en el que se ejecutará Streamlit
+EXPOSE 8080
+
+# Comando para ejecutar la aplicación
+CMD ["streamlit", "run", "streamlit_app.py", "--server.port=8080", "--server.address=0.0.0.0"]
