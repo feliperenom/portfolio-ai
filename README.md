@@ -1,7 +1,6 @@
-# Visit the projects of this Portfolio. 
+# HOW TO GO THROUGH THIS REPOSITORY
 
-**TinyHome AI Chatbot**: https://storage.googleapis.com/tinyhome-chat/index.html
+1. Go inside of each folder, containing the source code of each project.
+2. Watch the demonstration video to see the projects in action
 
-**Tesla Model 3 User Manual RAG**: https://tesla-model-3-chatbot-front-119684997782.us-central1.run.app/
-
-**News Chatbot AI Agent**: https://news-chatbot-front-119684997782.us-central1.run.app/
+I hope you liked it! If you are interested you can reach me out at feliperenom70@gmail.com
